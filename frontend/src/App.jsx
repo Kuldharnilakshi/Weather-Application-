@@ -16,8 +16,11 @@ function App() {
 
     try {
       const res = await axios.get(
-        ``https://weather-application-backend-i56w.onrender.com/api/weather?city=${city}`
-      );
+  `https://weather-application-backend-i56w.onrender.com/api/weather?city=${city}`
+);
+
+
+      
       setWeather(res.data);
     } catch (err) {
       setError("City not found. Please try again.");
